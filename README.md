@@ -39,7 +39,7 @@ AWS Architecture Diagram
 
 <div align="center">
   <a>
-    <img src="readme-assets/aws-architecture-diagram.png" alt="Logo" width="480" height="480">
+    <img src="readme-assets/aws-architecture-diagram.PNG" alt="Logo" width="720" height="480">
   </a>
 </div>
 
@@ -54,13 +54,14 @@ Dashboard
 
 <div align="center">
   <a>
-    <img src="readme-assets/dashboard.png" alt="Logo" width="480" height="360">
+    <img src="readme-assets/dashboard.PNG" alt="Logo" width="480" height="360">
   </a>
 </div>
-
+<br/>
+<br/>
 <div align="center">
   <a>
-    <img src="readme-assets/dashboard-metrics.png" alt="Logo" width="480" height="360">
+    <img src="readme-assets/dashboard-metrics.PNG" alt="Logo" width="480" height="360">
   </a>
 </div>
 
@@ -68,13 +69,13 @@ Notifications:
 
 <div align="center">
   <a>
-    <img src="readme-assets/notifications-audit.png" alt="Logo" width="480" height="360">
+    <img src="readme-assets/notifications-audit.jpg" alt="Logo" width="240" height="360">
   </a>
 </div>
 
 Ackowledgements
 ------------
 * [AWS Docs](https://docs.aws.amazon.com/)
-* [Parnika Kaushik]
-* [Rubani Bhatia]
+* Parnika Kaushik
+* Rubani Bhatia
 --------
