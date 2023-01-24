@@ -1,0 +1,85 @@
+{
+    "Parameters": {
+        "DeviceName": {
+            "Type": "String"
+        },
+        "vendorID": {
+            "Type": "String"
+        },
+        "vendorName": {
+            "Type": "String"
+        },
+        "heartRate": {
+            "Type": "String",
+            "Default": 80
+        },
+        "bloodPressure": {
+            "Type": "String",
+            "Default": "120/80"
+        },
+        "bodyTemperature": {
+            "Type": "String",
+            "Default": "36 Celsius"
+        },
+        "Location": {
+            "Type": "String",
+            "Default": "WA"
+        },
+        "CSR": {
+            "Type": "String"
+        },
+        "SerialNumber": {
+            "Type": "String"
+        }
+    },
+    "Resources": {
+        "thing": {
+            "Type": "AWS::IoT::Thing",
+            "Properties": {
+                "ThingName": {
+                    "Ref": "DeviceName"
+                },
+                "AttributePayload": {
+                    "version": "v1",
+                    "serialNumber": {
+                        "Ref": "SerialNumber"
+                    },
+                    "vendorID": {
+                        "Ref": "vendorID"
+                    },
+                    "vendorName": {
+                        "Ref": "vendorName"
+                    },
+                    "heartRate": {
+                        "Ref": "heartRate"
+                    },
+                    "bloodPressure": {
+                        "Ref": "bloodPressure"
+                    },
+                    "bodyTemperature": {
+                        "Ref": "bodyTemperature"
+                    }
+                },
+                "ThingTypeName": "HealthMonitor",
+                "ThingGroups": [
+                    "HealthMonitors"
+                ]
+            }
+        },
+        "certificate": {
+            "Type": "AWS::IoT::Certificate",
+            "Properties": {
+                "CertificateSigningRequest": {
+                    "Ref": "CSR"
+                },
+                "Status": "ACTIVE"
+            }
+        },
+        "policy": {
+            "Type": "AWS::IoT::Policy",
+            "Properties": {
+                "PolicyDocument": "{\"Version\": \"2012-10-17\",\"Statement\": [{\"Effect\": \"Allow\",\"Action\": [\"iot:*\"],\"Resource\": [\"*\"]}]}"
+            }
+        }
+    }
+}

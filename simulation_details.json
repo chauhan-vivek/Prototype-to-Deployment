@@ -1,0 +1,16 @@
+{
+    "numDevices": 15,
+    "deviceName": "healthMonitor",
+    "iotRoleArn": "arn:aws:iam::667194736228:role/workshop/role/DeviceManagementWorkshop-MiscResour-IoTServiceRole-1F9SVSMA2NC70",
+    "duration": 1800,
+    "interval": 2,
+    "payloadAttributes": {
+        "heartRate": 80,
+        "bloodPressure": "120/80",
+        "bodyTemperature": 36,
+        "UTCtimestamp": "",
+        "serialNumber": "",
+        "vendorID": "anhfief02490",
+        "vendorName": "ABCvendorCompany"
+    }
+}
