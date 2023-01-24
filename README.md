@@ -15,21 +15,21 @@ This project offers a comprehensive cloud solution for simulating, testing, and 
 Project Organization
 -----------
 
-|---readme-assets
-|---README.md
-|---simulation_details.json
-|---references
-|---reports
-		figures
-+---device_simulator
-|       device_simulator.zip
-|       runSimulation.json
-\---virtual_device_creator
-        create_root_ca_bundle.sh
-        iot_template_body.json
-        lambda_function.py
-        pub_sub.sh
-        virtual_device_creator.sh
+|---readme-assets  
+|---README.md  
+|---simulation_details.json  
+|---references  
+|---reports  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;figures  
++---device_simulator  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;device_simulator.zip  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runSimulation.json  
+\---virtual_device_creator  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;create_root_ca_bundle.sh  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iot_template_body.json  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lambda_function.py  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pub_sub.sh  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;virtual_device_creator.sh  
 		
 -----------
 
